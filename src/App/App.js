@@ -5,7 +5,7 @@ import PokemonList from '../containers/PokemonList';
 
 function App(props) {
 	return (
-		<div className="App">
+		<div className="app">
 			<nav>
 				<NavLink to={'/'}>Search</NavLink>
 			</nav>
