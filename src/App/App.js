@@ -5,9 +5,11 @@ import PokemonList from '../containers/PokemonList';
 
 function App(props) {
 	return (
-		<div className="app">
-			<nav>
-				<NavLink to={'/'}>Search</NavLink>
+		<div className="App">
+			<nav style={{ paddingLeft: '30px', justifyContent: 'flex-start' }}>
+				<NavLink to={'/'} style={{ fontWeight: 'bold' }}>
+					PokéDux
+				</NavLink>
 			</nav>
 			<Switch>
 				<Route path={'/'} exact component={PokemonList} />

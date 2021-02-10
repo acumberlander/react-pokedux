@@ -1,6 +1,5 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { Link } from 'react-router-dom';
 import { getPokemon } from '../actions/pokemonActions';
 import _ from 'lodash';
 
@@ -56,7 +55,7 @@ const Pokemon = (props) => {
 
 	return (
 		<div className="poke">
-			<h1>{pokemonName}</h1>
+			<h1>{pokemonName.toUpperCase()}</h1>
 			{showData()}
 		</div>
 	);
